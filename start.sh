@@ -9,7 +9,8 @@ trap _sig SIGKILL SIGTERM SIGHUP SIGINT EXIT
 
 if [ ! -f $DATA_PATH/$1.osrm ]; then
   if [ ! -f $DATA_PATH/$1.osm.pbf ]; then
-    curl $2 > $DATA_PATH/$1.osm.pbf
+    #curl $2 > $DATA_PATH/$1.osm.pbf
+    wget -o $DATA_PATH/$1.osm.pbf $2
   fi
   ./osrm-extract $DATA_PATH/$1.osm.pbf
   ./osrm-prepare $DATA_PATH/$1.osrm

@@ -1,6 +1,6 @@
 # Docker image for OSRM
 
-This project lets you prepare and run a docker container with OSRM and the map of your choice.
+This project lets you prepare and run a docker container with OSRM (stable version 4.7.0) and the map of your choice.
 
 ## Build
 

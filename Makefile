@@ -1,2 +1,2 @@
 build:
-	docker build -t acroca/osrm-docker .
+	docker build -t starfox/osrm-docker .

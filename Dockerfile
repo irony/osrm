@@ -11,6 +11,7 @@ RUN \
 
 RUN \
   git clone git://github.com/Project-OSRM/osrm-backend.git /src && \
+  cd /src && git checkout tags/v4.7.0 && \
   mkdir -p /build && \
   cd /build && \
   cmake /src && make && \

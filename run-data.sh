@@ -3,5 +3,5 @@
 docker run \
     -v /data \
     --name osrm-data \
-    starfox899/osrm-docker:latest \
+    starfox/osrm-docker:latest \
     echo "running data container..."

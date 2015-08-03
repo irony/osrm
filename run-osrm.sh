@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#MAP=Barcelona
-#MAP_URL=https://s3.amazonaws.com/metro-extracts.mapzen.com/barcelona_spain.osm.pbf
-MAP=Thueringen
-MAP_URL=http://download.geofabrik.de/europe/germany/thueringen-latest.osm.pbf
-#MAP=Germany
-#MAP_URL=http://download.geofabrik.de/europe/germany-latest.osm.pbf
+#MAP=Bremen
+#MAP_URL=http://download.geofabrik.de/europe/germany/bremen-latest.osm.pbf
+#MAP=Thueringen
+#MAP_URL=http://download.geofabrik.de/europe/germany/thueringen-latest.osm.pbf
+MAP=Germany
+MAP_URL=http://download.geofabrik.de/europe/germany-latest.osm.pbf
 
 docker run \
     -d \

@@ -7,7 +7,7 @@ RUN \
     libprotobuf-dev libosmpbf-dev libpng12-dev libtbb-dev libbz2-dev \
     libstxxl-dev libstxxl-doc libstxxl1 libxml2-dev libzip-dev \
     libboost-all-dev lua5.1 liblua5.1-0-dev libluabind-dev libluajit-5.1-dev \
-    wget
+    wget gawk
 
 RUN \
   git clone git://github.com/Project-OSRM/osrm-backend.git /src && \

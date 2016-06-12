@@ -7,7 +7,7 @@ _sig() {
 
 trap _sig SIGKILL SIGTERM SIGHUP SIGINT EXIT
 
-if [ ! -f $DATA_PATH/$1.osrm ]; then
+if [ ! -f $DATA_PATH/$1.osrm.hsgr ]; then
   if [ ! -f $DATA_PATH/$1.osm.pbf ]; then
     wget -O $DATA_PATH/${1}.osm.pbf ${2}
     wget -O $DATA_PATH/${1}.osm.pbf.md5 ${2}.md5
@@ -20,6 +20,7 @@ if [ ! -f $DATA_PATH/$1.osrm ]; then
   fi
   ./osrm-extract $DATA_PATH/$1.osm.pbf
   ./osrm-prepare $DATA_PATH/$1.osrm
+  ./osrm-contract $DATA_PATH/$1.osrm
   rm $DATA_PATH/$1.osm.pbf
 fi
 
